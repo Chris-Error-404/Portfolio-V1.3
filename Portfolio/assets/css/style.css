@@ -796,12 +796,12 @@ div.proj-text{
 }
 
 div.proj-text p{
-    font-family: 'light';
+    font-family: 'reg';
 }
 
 div.proj-text p{
-    font-family: 'thin';
-    font-size: 90%;
+    font-family: 'light';
+    font-size: 100%;
     color: white;
 }
 
