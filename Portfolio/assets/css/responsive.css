@@ -1,0 +1,550 @@
+/* Mobile Header */
+@media (max-width:1024px) {
+    header.mobile-header{ /* media queried to appear only on mobile */
+        display: block;
+    } 
+
+    nav.mobile label{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    nav.mobile ul li a:hover {
+        text-decoration: none;
+        color: #b9ff66;
+    }
+    
+    nav.mobile label{
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 768px) {
+    header.mobile-header{ 
+        display: block;
+    }
+
+    nav.mobile label{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header.mobile-header{ /* media queried to appear only on mobile */
+        display: block;
+    }
+
+    nav.mobile label{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+/* end Mobile Header */
+
+
+/* Desktop Header */
+@media (max-width:1024px) {
+    header.desktop{
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    header.desktop{
+        display: none;
+    }
+}
+@media (max-width:680px) {
+    header.desktop{
+        display: none;
+    }
+}
+/* end Desktop Header*/
+
+
+
+/* body */
+@media (max-width: 1024px){
+    body{
+        margin-left: 1em;
+        margin-right: 1em;
+        background-color: white;
+    }
+}
+/* end body */
+
+
+
+/* hero */
+@media (max-width: 1024px) {
+    div.hero{
+        margin-top: 5vh;
+        padding-top: 2em;
+        padding-bottom: 0.8em;
+        display: block;
+        justify-content:center;
+        align-items: center;
+        text-align: left;
+        transition: 0.5s ease;
+        padding-left: 0em;
+        padding-right: 1em;
+    }
+    
+    div.hero-text{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    div.hero-text h1{
+        line-height: 1.2em;
+     }
+
+    h1.adjust{
+        margin-top: 1em;
+    } 
+     
+     div.hero-text p{
+         margin-top: 0.7em;
+         margin-bottom: 1.5em;
+         padding: 0;
+         justify-content: left;
+      }
+    
+
+    
+    div.hero-img{
+        width: fit-content;
+        display: none;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    div.hero-img img{
+        width: 80%;
+        height: auto;
+    }
+    
+    div.mobile-img{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        display: block;
+    }
+    
+    div.mobile-img img{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    div.hero{
+        padding-top: 1em;
+        padding-bottom: 0.8em;
+        display: block;
+        justify-content:center;
+        align-items: center;
+        text-align: left;
+        transition: 0.5s ease;
+    }
+    
+    div.hero-text{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    div.hero-text h1{
+        line-height: 1.4em;
+        font-size: 160%;
+     }
+
+    h1.adjust{
+        margin-top: 1em;
+    } 
+     
+    div.hero-text p{
+        margin-top: 0.8em;
+        margin-bottom: 2.2em;
+        padding: 0;
+        justify-content: left;
+        font-size: 100%;
+    }
+
+    div.hero-img{
+        display: none;
+    }
+
+    div.mobile-img{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        display: block;
+    }
+    
+    div.mobile-img img{
+        width: 100%;
+    }
+
+}
+/* end HERO */
+
+
+
+/* skills */
+@media (max-width: 786px){
+
+    div.desk-skill{
+        display: none;
+    }
+
+    div.mobile-skill{
+        display: block;
+    }
+    
+
+    div.skill-heading-mob{
+        text-align: center;
+        align-items: center;
+        font-size: 150%;
+        margin-top: 2em;
+        margin-bottom: 0em;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    
+    div.skill-heading-mob h1{
+        font-family: 'light';
+        font-size: 100%;
+    }
+
+    div.skill-box h3{
+        color: #b9ff66;
+    }
+    
+    div.skill-heading-mob span{
+        font-size: 100%;
+    }
+
+/* Carousel styling */
+.skill-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding: 1rem;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    transition: 0.5s ease;
+    margin-bottom: 2em;
+}
+
+.skill-row::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+.skill-box {
+    flex: 0 0 80%; /* Each skill box takes up 80% of the viewport width */
+    scroll-snap-align: start;
+    background-color: #fd9c6b;
+    border-radius: 0px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+/* Add animation for skill boxes when they scroll into view */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-img img {
+    width: 50px; /* Adjust image size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Optional hover effect */
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+}
+/* end skills */
+
+
+/* experience */
+
+@media (max-width:1024px){
+    div.exp-container{
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-top: 5vh;
+    }
+
+}
+
+
+@media (max-width:786px){
+
+    div.exp-container{
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-top: 5vh;
+        padding-bottom: 0;
+    }
+
+    div.exp{
+        padding-left: 0;
+        padding-right: 0;
+    }
+     div.exp-heading{
+        margin-bottom: 2em;
+     }
+
+    div.exp-heading h1{
+        font-size: 150%;
+    }
+
+    div.exp-row{
+        padding: 0em;
+        padding-bottom: 2em;
+        margin-bottom: 3vh;
+        border-radius: 10px;
+        border-bottom-left-radius:0px ;
+        border-bottom-right-radius: 0px;
+        border-bottom: 2px solid rgba(240, 255, 255, 0.634);
+    }
+    
+    /* pop out */
+div.exp-row {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pop-out effect on hover */
+div.exp-row:hover {
+    transform: scale(1); /* Slightly increases the size */
+    background-color: black;
+    box-shadow: 0 0px 0px black; /* Adds a shadow for emphasis */
+}
+
+    div.card-top{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    div.card-bottom{
+        padding-left: 1em;
+        padding-right: 1em;
+        
+    }
+    div.exp-card:hover {
+        transform: scale(1); /* Slightly increases the size */
+        background-color: black;
+        box-shadow: 0 0px 0px black; /* Adds a shadow for emphasis */
+    }
+
+    div.card-top{
+        display: block;
+        line-height: 2em;
+    }
+
+    div.exp-card hr{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+/*  end experience */
+
+
+
+/* project */
+@media (max-width: 786px){
+
+    div.proj-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    div.proj-heading{
+    margin-bottom: 2em;
+    }
+
+    div.proj-heading h1{
+    font-size: 100%;
+    }
+
+    div.proj{
+        margin-top: 4em;
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-top: 0em;
+        padding-top: 4em;
+        padding-bottom: 0.625em;
+    }
+
+    div.proj-row{
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    /* Pop-out effect on hover */
+    div.proj-row:hover {
+        transform: scale(1); /* Slightly increases the size */
+        background-color: black;
+        box-shadow: 0 8px 16px black; /* Adds a shadow for emphasis */
+    }
+
+    div.proj-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.proj-box2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    div.proj-img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+    }
+
+    div.proj-img3{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+    }
+
+    div.proj-img2{
+        display: none;
+    }
+
+    div.proj img{
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    div.proj-text{
+        margin-top: 10vh;
+        width: 100%;
+        height: auto;
+    }
+}
+/* end project */
+
+
+
+/* about */
+@media (max-width:786px){
+    div.abt-container{
+        flex-direction: column;
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-top: 5vh;
+    }
+
+    div.abt-img{
+        width: 100%;
+    }
+
+    div.abt-img img{
+        width: 100%;
+    }
+
+    div.abt-text{
+        width: 100%;
+    }
+
+    div.abt-heading{
+        text-align: center;
+        align-items: center;
+        font-size: 150%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+}
+/* end about */
+
+
+/* contact */
+@media (max-width: 786px){
+    div.contact-container{
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+    }
+    div.contact{
+        flex-direction: column;
+    }
+    
+    div.contact-form{
+        width: 100%;
+    }
+    
+    div.contact-text{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    
+    div.contact-info a{
+        font-size: 150%;
+        font-weight: 800;
+        display:inline-block;
+        line-height: 1.5em;
+        transition: 0.5s ease;
+        line-break: anywhere;
+        font-family: 'light';
+    }
+}
+/* end contact */
+
+
+
+/* GPT */
+@media (max-width: 360px) {
+    div.hero-text h1 {
+        font-size: 120%;
+    }
+    div.hero-text p {
+        font-size: 90%;
+    }
+    div.mobile-img img {
+        width: 50%;
+    }
+    div.skill-heading-mob {
+        font-size: 130%;
+    }
+    div.skill-box {
+        flex: 0 0 90%; /* Adjust for smaller viewports */
+    }
+    div.contact-info a {
+        font-size: 120%;
+    }
+}
+
+/* social links*/
+@media (max-width: 786px){
+.social-links{
+    padding-left: 0em;
+}
+}
