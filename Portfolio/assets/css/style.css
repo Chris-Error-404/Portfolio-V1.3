@@ -708,7 +708,7 @@ div.card-top h5{
 
 
 div.card-bottom p{
-    color: lightgrey;
+    color: white;
 }
 
 div.card-bottom a{
@@ -1103,7 +1103,7 @@ div.ht{
 }
 
 .text-s{
-    font-family: 'thin';
+    font-family: 'light';
     font-size: 1em;
 }
 
