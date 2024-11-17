@@ -235,6 +235,7 @@
     padding: 1rem;
     scrollbar-width: none; /* Hide scrollbar in Firefox */
     transition: 0.5s ease;
+    marin-right: 1em;
     margin-bottom: 2em;
 }
 
