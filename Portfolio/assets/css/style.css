@@ -939,7 +939,9 @@ div.contact-text p{
 div.contact-info {
     margin-top: 3vh;
     width: 100%;
+    word-break: break-all;
 }
+
 div.contact-info a{
     font-size: 150%;
     display: block;
