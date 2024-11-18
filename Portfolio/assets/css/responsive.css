@@ -521,7 +521,7 @@ div.exp-row:hover {
 
 
 
-/* GPT */
+/*
 @media (max-width: 360px) {
     div.hero-text h1 {
         font-size: 120%;
@@ -536,12 +536,12 @@ div.exp-row:hover {
         font-size: 130%;
     }
     div.skill-box {
-        flex: 0 0 90%; /* Adjust for smaller viewports */
+        flex: 0 0 90%;
     }
     div.contact-info a {
         font-size: 120%;
     }
-}
+}*/
 
 /* social links*/
 @media (max-width: 786px){
