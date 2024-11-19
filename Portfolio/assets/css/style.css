@@ -986,7 +986,10 @@ div.contact-info a:hover{
 }
 
 form input::placeholder{
-    font-family: 'thin';
+    font-family: 'light';
+
+form textarea::placeholder{
+    font-family: 'light;
 }
 /* end contact */
 
